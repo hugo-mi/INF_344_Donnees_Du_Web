@@ -1,0 +1,112 @@
+/* Le CSS va ici */
+
+body {
+    font-family: Segoe UI;
+    margin: 25px;
+}
+
+hr{
+    height: 3px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.label_start {
+    font-size: 20px;
+    color: #555;
+    margin-top: 50px;
+}
+
+#wiki_logo{
+  width: 100px;	
+  left: 30px;
+  top: 30px;
+}
+
+.title_h1{
+    color: #555;
+    font-size: 25px;
+}
+
+/* Début Submit button */
+
+.button_submit {
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.button_submit:hover {
+  background-color: #555555;
+  color: white;
+  border: 3px solid #e7e7e7;
+}
+
+/* Fin Submit button */
+
+
+/* Début Input text form */
+
+input[type=text] {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid #555;
+  margin-top: 10px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+/* Fin Input text form */
+
+/* Début Fash box notif */
+
+.flash_box_info,
+.flash_box_succes,
+.flash_box_warning,
+.flash_box_error {
+  margin: 10px 0;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.flash_box_succes {
+  color: #270;
+  background-color: #DFF2BF;
+}
+
+.flash_box_info {
+  color: #059;
+  background-color: #BEF;
+}
+
+.flash_box_warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+
+.flash_box_error {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+/* Fin Fash box notif */

@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+    
+{% block body %}
+    {# Début du bloc "body"#}
+        <header>
+            <h1><a href="http://localhost:5000/">Titre de la page : {{session.article}}</a></h1>
+            <hr>
+            <p class="flash_box_info"> Votre score est : <strong>{{session.score}}</strong> </p>
+        </header>
+            
+        <form action="/move" method="POST">
+                <fieldset>
+                    <legend>Choisissez un lien: </legend>
+                    
+                    <div>
+                         <!-- Init the first radio button which have to be setted by default as checked -->
+                         <p>
+                             <input type="radio" id="{{session.content_html[0]}}" name="destination" value="{{session.content_html[0]}}" checked>
+                             <label for="{{session.content_html[0]}}">{{session.content_html[0]}}</label>
+                         </p>
+                         <!-- Add the other radio button with the link -->
+                         {% for link in session.content_html[1:] %}
+                             <p>
+                                 <input type="radio" id="{{link}}" name="destination" value="{{link}}">
+                                 <label for="{{link}}">{{link}}</label>
+                             </p>
+                         {% endfor %}
+                    </div>
+                </fieldset>
+                <p> <input class="button_submit" type="submit" value="Soumettre"> </p> 
+        </form>
+    
+    {# Fin du bloc "body" #}
+{% endblock %}

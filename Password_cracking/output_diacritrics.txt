@@ -1,0 +1,13 @@
+#### Testing dictionary_words_diacritics strategy ####
+You found the password: pres
+You found the password: pres
+1
+You found the password: siege
+You found the password: siege
+2
+You found the password: fonde
+You found the password: fonde
+3
+You found the password: fonde
+You found the password: fonde
+4
